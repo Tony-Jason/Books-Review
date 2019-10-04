@@ -1,0 +1,24 @@
+<table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Title</th>
+            <th scope="col">Author</th>
+            <th scope="col">Price</th>
+          </tr>
+        </thead>
+        <tbody *ngIf = "bookdisp.length>0">
+          
+          
+          <tr *ngFor = "let itt of bookdisp">
+            <th scope="row">{{itt.id}}</th>
+            <td>{{itt.title}}</td>
+            <td>{{itt.author}}</td>
+            <td>{{itt.price}}</td>
+            <td><a routerLink="/review/{{itt.id}}" id = "itt.id" class="btn btn-sm btn-dark">Write a Review</a></td>
+            <td><a routerLink="/viewreview/{{itt.id}}"  class="btn btn-sm btn-dark">View Review</a></td>
+          </tr>
+        </tbody>
+      </table>
+      
+     

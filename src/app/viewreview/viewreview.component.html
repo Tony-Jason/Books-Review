@@ -1,0 +1,11 @@
+<div class="container">
+    <h3>Reviews</h3>
+    <div *ngFor="let iter of reviewdisp">
+         <div *ngIf = "idview == iter.id"> 
+            
+            <p>{{iter.review}}</p>
+        </div> 
+    </div>
+    <button  routerLink = "/list" class = "btn btn-primary">Go Back</button>
+</div> 
+

@@ -1,0 +1,16 @@
+<div class = "container">
+    <div class = "row">
+        <div class = "col-md-6 offset-3">
+            
+            <form >
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Write a Review</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" name = "review" [(ngModel)] = "review" rows="5"></textarea>
+              </div>
+              <button type="button" class="btn btn-primary"  style = "margin-left: 200px; " (click) = "addReview()">Submit</button><br>
+              
+              <button type = "button" routerLink = "/list" class = "btn btn-primary" >Go Back</button>
+            </form>
+        </div>
+    </div>
+</div>
